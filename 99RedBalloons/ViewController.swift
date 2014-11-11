@@ -20,13 +20,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+// Initialize the balloon objects
+        
         var balloon1 = Balloons()
         var balloon2 = Balloons()
         var balloon3 = Balloons()
         var balloon4 = Balloons()
         var balloon5 = Balloons()
         
-
+// Define balloons
        
         balloon1.name = "0 balloon"
         balloon1.image = UIImage(named: "BerlinTVTower.jpg")
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
         balloon5.image = UIImage(named: "RedBalloon4.jpg")
         balloon5.balloonNumber = 5
         
-
+// Add balloon to balloons array
         
         balloons = [balloon1,balloon2,balloon3,balloon4,balloon5]
         
@@ -57,6 +59,7 @@ class ViewController: UIViewController {
         
     }
     
+//Random balloon image generator
     
     func randomBalloonImageAssignment (balloonNumber:Int) -> String {
     
@@ -90,6 +93,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+// Next button action:
+    
     
     @IBAction func nextButtonAction(sender: UIBarButtonItem) {
         

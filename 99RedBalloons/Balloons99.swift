@@ -9,7 +9,12 @@
 import Foundation
 import UIKit
 
+
+// Balloon struct
+
 struct Balloons {
+    
+    //Balloon Properties
     
     var name:String = ""
     var image: UIImage = UIImage(named: "")
